@@ -1,0 +1,21 @@
+button{
+    padding: 15px 40px;
+    border-radius: 40px;
+    background: none;
+    margin-top: 25px;
+}
+.btGreen{
+    background-color: var(--basicGreen);
+    border: 0px;
+    color: var(--basicTextBtGreen)
+
+}
+
+.btDetails {
+
+    border: 2px var(--basicOrange) solid;
+    background-color: none;
+    color: var(--basicWhite)
+
+
+}

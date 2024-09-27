@@ -1,0 +1,183 @@
+:root {
+    --background-c: #2D3331 ;
+    --basicGreen:#07FFA6;
+    --basicWhite: #fff;
+    --basicOrange:#FF3408;
+    --basicBackgroundLabel: #364942;
+    --basicbackgroundBlock: #2C312F;
+    --basicTextBtGreen:#364942;
+
+}
+
+* {
+    margin: 0px; 
+    padding: 0px;
+
+}
+
+body, html{
+
+    background-color: rgba(45, 51, 49, 0.5);
+    height: 100vh;}
+
+body {
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    }
+    
+header, main, footer {
+    width: 1000px;
+}
+
+main {
+    flex: 1;
+
+}
+
+footer{
+
+    bottom: 0px;
+
+}
+
+.main-content{
+
+     width: 100%;
+     display: flex;
+     align-content: center;
+     align-items: center; 
+ 
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+/* stilo span */
+    .valueCar{ color: var(--basicGreen);}
+    .priceCar{
+        color: var(--basicWhite);
+    }
+/* stilo span */
+
+h1 {
+    color: var(--basicWhite);
+}
+.labelPage{
+    color: var(--basicWhite);
+    font-size: 18px;
+    word-spacing: 10px;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+.p-basic {
+    color: var(--basicWhite);
+}
+
+.paddingTop-200 {
+    padding-top: 100px;
+}
+
+.nameCompany{color: var(--basicOrange);}
+
+/* Home */
+.bgHome{
+    background-image: url('../img/app/fundoHome.png');
+    background-size: 100%;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.bgEmpresa{
+    background:var(--background-c);
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+/* Empresa */
+.blGeral{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    }
+
+    
+.blGeral picture{
+
+    -webkit-box-shadow: 6px 4px 19px 0px rgba(0,0,0,0.09);
+-moz-box-shadow: 6px 4px 19px 0px rgba(0,0,0,0.09);
+box-shadow: 6px 4px 19px 0px rgba(0,0,0,0.09);
+   
+}
+
+.blGeral article h1{
+    color: var(--basicWhite);
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.blGeral article{
+    width: 100%;
+}
+/* Empresa */
+
+.blHome{
+    width: 100%;
+    padding: 200px 0px;
+}
+
+.blHome h1{
+    color: var(--basicWhite);
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.blHome p{
+    color: var(--basicWhite);
+    font-size: 18px;
+    
+}
+
+/* Home */
+
+/* nav header */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: var(--basicWhite);
+}
+/* nav header */
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--basicWhite);
+
+}
+/* footer */
