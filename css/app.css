@@ -1,33 +1,37 @@
 :root {
-    --background-c: #2D3331 ;
-    --basicGreen:#07FFA6;
+    --background-c: #2D3331;
+    --basicGreen: #07FFA6;
     --basicWhite: #fff;
-    --basicOrange:#FF3408;
+    --basicOrange: #FF3408;
     --basicBackgroundLabel: #364942;
     --basicbackgroundBlock: #2C312F;
-    --basicTextBtGreen:#364942;
+    --basicTextBtGreen: #364942;
 
 }
 
 * {
-    margin: 0px; 
+    margin: 0px;
     padding: 0px;
 
 }
 
-body, html{
+body,
+html {
 
     background-color: rgba(45, 51, 49, 0.5);
-    height: 100vh;}
+    height: 100vh;
+}
 
 body {
     display: flex;
     flex-direction: column;
-   
+
     align-items: center;
-    }
-    
-header, main, footer {
+}
+
+header,
+main,
+footer {
     width: 1000px;
 }
 
@@ -36,126 +40,324 @@ main {
 
 }
 
-footer{
+footer {
 
     bottom: 0px;
 
 }
 
-.main-content{
+.main-content {
 
-     width: 100%;
-     display: flex;
-     align-content: center;
-     align-items: center; 
- 
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     padding: 30px;
 }
 
 /* stilo span */
-    .valueCar{ color: var(--basicGreen);}
-    .priceCar{
-        color: var(--basicWhite);
-    }
+.valueCar {
+    color: var(--basicGreen);
+}
+
+.priceCar {
+    color: var(--basicWhite);
+}
+
 /* stilo span */
 
 h1 {
     color: var(--basicWhite);
 }
-.labelPage{
+
+.labelPage {
     color: var(--basicWhite);
     font-size: 18px;
-    word-spacing: 10px;
+    letter-spacing: 5px;
 }
 
-.textCenter{
+.textCenter {
     text-align: center;
+
+}
+
+.textRight {
+    text-align: right;
 }
 
 .p-basic {
     color: var(--basicWhite);
+    opacity: 0.5;
 }
 
 .paddingTop-200 {
     padding-top: 100px;
 }
 
-.nameCompany{color: var(--basicOrange);}
+.width-80 {
+    width: 80%;
+}
+
+.width-20 {
+    width: 20%;
+}
+
+.white {
+    color: var(--basicWhite);
+}
+
+.green {
+    color: var(--basicGreen);
+}
+
+.orange{
+    color: var(--basicOrange);
+}
+
+.nameCompany {
+    color: var(--basicOrange);
+}
+
+.font-12{
+    font-size: 12px;
+}
 
 /* Home */
-.bgHome{
+.bgHome {
     background-image: url('../img/app/fundoHome.png');
     background-size: 100%;
-    position:absolute;
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -99;
 }
 
-.bgEmpresa{
-    background:var(--background-c);
-    position:absolute;
+.bgEmpresa {
+    background: var(--background-c);
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -99;
 }
+
 /* Empresa */
-.blGeral{
+.blGeral {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 50px;
-    }
-
-    
-.blGeral picture{
-
-    -webkit-box-shadow: 6px 4px 19px 0px rgba(0,0,0,0.09);
--moz-box-shadow: 6px 4px 19px 0px rgba(0,0,0,0.09);
-box-shadow: 6px 4px 19px 0px rgba(0,0,0,0.09);
-   
 }
 
-.blGeral article h1{
+
+.blGeral picture {
+
+    -webkit-box-shadow: 6px 4px 19px 0px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 6px 4px 19px 0px rgba(0, 0, 0, 0.09);
+    box-shadow: 6px 4px 19px 0px rgba(0, 0, 0, 0.09);
+
+}
+
+.blGeral article h1 {
     color: var(--basicWhite);
     font-size: 40px;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
 }
 
-.blGeral article{
+.blGeral article {
     width: 100%;
 }
+
 /* Empresa */
 
-.blHome{
+.blHome {
     width: 100%;
     padding: 200px 0px;
 }
 
-.blHome h1{
+.blHome h1 {
     color: var(--basicWhite);
     font-size: 40px;
     margin-bottom: 15px;
 }
 
-.blHome p{
+.blHome p {
     color: var(--basicWhite);
     font-size: 18px;
-    
+
 }
 
 /* Home */
 
+
+/* Veiculos */
+.blscars {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.blscars> * {
+
+    max-width: 333px;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+}
+
+.blscars .imgBackground{
+    height: 216px;
+    width: 333px;
+    border-radius: 10px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.blscars .imgBackground:hover{
+
+    background-color: var(--basicGreen) !important;
+    background-image: none;
+    opacity: 1;
+}
+.blscars .rotulo {
+    background-color: var(--basicBackgroundLabel);
+    padding: 10px 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -35px;
+    z-index: 1;
+    -webkit-box-shadow: 6px 4px 19px 0px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 6px 4px 19px 0px rgba(0, 0, 0, 0.09);
+    box-shadow: 6px 4px 19px 0px rgba(0, 0, 0, 0.09);
+    max-width: 85%;
+
+}
+
+.blscars .rotulo>* {}
+
+.blscars img{
+    position: absolute;z-index:0;border-radius:10px;
+}
+
+.blscars .blRent{
+    position: relative;z-index:1
+}
+
+/* Veiculos */
+
+/* Reserva */
+.blsReserva{
+    display: flex;flex-direction: column;justify-content:center ;align-items:center ;
+}
+
+.InfoVeiculosReserva{
+    background-color: var(--basicBackgroundLabel);
+    padding: 10px 20px ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -webkit-box-shadow: 6px 4px 19px 0px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 6px 4px 19px 0px rgba(0, 0, 0, 0.09);
+    box-shadow: 6px 4px 19px 0px rgba(0, 0, 0, 0.09);
+    width: 500px;}
+
+    .blReservaData {
+background-color: var(--basicbackgroundBlock);padding: 20px;border-radius: 10px;width: 480px;
+    }
+.date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+    .date input {
+        background:none;
+        border: 1px solid #3B4340;
+        padding: 10px;
+        border-radius:10px;
+        width: 45%;
+        color: var(--basicWhite);
+    }
+
+    .valueReserva{
+        color: var(--basicGreen);
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .price{
+        text-align: center;
+        margin-top: 20px;
+    }
+/* Reserva */
+/* funcionamento */
+.blsSteptoStep {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.blsSteptoStep>* {
+    background-color: var(--basicbackgroundBlock);
+    padding: 40PX;
+    border-radius: 20px;
+
+}
+
+.blsSteptoStep H2 {
+    color: var(--basicWhite);
+    margin-bottom: 20px;
+}
+
+.blsSteptoStep p {
+    color: var(--basicWhite);
+    opacity: 0.5;
+}
+
+.blsSteptoStep {
+    counter-reset: section-counter;
+    /* Inicializa o contador */
+}
+
+.circleNum::before {
+    counter-increment: section-counter;
+    /* Incrementa o contador para cada elemento */
+    content: counter(section-counter);
+    /* Define o conteúdo como o valor do contador */
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background: none;
+    color: #fff;
+    text-align: center;
+    margin-right: 5px;
+    border: 2px solid var(--basicOrange);
+    margin-top: 20px;
+}
+
+/* funcionamento */
 /* nav header */
 .menu {
     list-style: none;
@@ -171,6 +373,19 @@ box-shadow: 6px 4px 19px 0px rgba(0,0,0,0.09);
     text-decoration: none;
     color: var(--basicWhite);
 }
+
+.pgMenu ul li{
+    list-style: none;
+    color: var(--basicWhite);
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.pgMenu  a {
+    color: var(--basicWhite);
+    text-decoration: none;
+}
+
 /* nav header */
 
 /* footer */
@@ -180,4 +395,5 @@ footer {
     color: var(--basicWhite);
 
 }
+
 /* footer */

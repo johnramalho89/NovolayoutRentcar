@@ -15,7 +15,14 @@ button{
 
     border: 2px var(--basicOrange) solid;
     background-color: none;
-    color: var(--basicWhite)
+    color: var(--basicWhite)   
+}
 
+.btBorderGreen{
 
+    border: 2px var(--basicGreen) solid;
+    background-color: none;
+    color: var(--basicWhite) ;
+    border-radius: 10px; 
+    width: 100%;
 }
