@@ -397,6 +397,45 @@ background-color: var(--basicbackgroundBlock);padding: 20px;border-radius: 10px;
     color: var(--basicWhite);
 }
 
+.pgMenu {
+    background-color: var(--basicbackgroundBlock);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    top: -1000px;
+    transition: top 0.5s;
+    transition-timing-function: ease;
+}
+
+.pgMenu.ativo {
+    top: 0px;
+}
+.pgMenu.desativo{
+    top: -1000px;
+}
+
+#toggleMenu{
+   cursor: pointer;
+}
+#toggleMenu2{
+    transition: transform 0.5s ease; 
+    cursor: pointer;
+}
+#toggleMenu2:hover {
+    transform: rotate(360deg); 
+}
+
+
+.pgMenu header{
+    display: flex;justify-content: end;padding: 30px 0px !important;
+}
+
+.pgMenu header img:hover{
+    rotate: 45;
+    transition: 1s;
+}
 .pgMenu ul li{
     list-style: none;
     color: var(--basicWhite);
